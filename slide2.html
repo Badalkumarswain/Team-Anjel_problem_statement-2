@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECOLoop - Current Status</title>
+    <link rel="stylesheet" href="slide2.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="icon active">🏠</div>
+        <div class="icon">💳</div>
+        <div class="icon">📊</div>
+        <div class="icon">🔔</div>
+        <div class="icon">⚙️</div>
+        <div class="logout">⏻</div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <h2 class="logo">ECO<span>Loop</span></h2>
+            <input type="text" placeholder="Search bar" onkeyup="searchAction(this.value)">
+            <div class="user-area">
+                <div class="status">
+                    <span>Active</span>
+                    <label class="switch">
+                        <input type="checkbox" checked onchange="toggleActive(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <span>Hi User!</span>
+                <img src="https://i.pravatar.cc/40">
+            </div>
+        </header>
+
+        <h1>Current Status</h1>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="setTab(this)">All</button>
+            <button class="tab" onclick="setTab(this)">Withdrawal</button>
+            <button class="tab" onclick="setTab(this)">Savings</button>
+            <button class="tab" onclick="setTab(this)">Deposit</button>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Waste Chart -->
+            <div class="card large">
+                <div class="card-header">
+                    <h3>Total Waste Disposition Management (Weekly)</h3>
+                    <span>View all →</span>
+                </div>
+
+                <div class="chart">
+                    <div class="y-axis">
+                        <span>100%</span>
+                        <span>75%</span>
+                        <span>50%</span>
+                        <span>25%</span>
+                        <span>10%</span>
+                    </div>
+
+                    <div class="bars">
+                        <div class="bar paper" data-value="80">Paper</div>
+                        <div class="bar ewaste" data-value="40">E-waste</div>
+                        <div class="bar sanitary" data-value="65">Sanitary</div>
+                        <div class="bar bio" data-value="55">Bio</div>
+                    </div>
+
+                    <div class="qr">
+                        <div class="qr-box red"></div>
+                        <div class="qr-box blue"></div>
+                        <div class="qr-box green"></div>
+                        <div class="qr-box white"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timings -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Timely Active in this Week</h3>
+                    <span>View all →</span>
+                </div>
+                <ul class="schedule">
+                    <li>Mon - 9:30 - 11:00 AM</li>
+                    <li>Tue - 9:00 - 10:00 AM</li>
+                    <li>Wed - 10:00 - 10:30 AM</li>
+                    <li>Thu - 10:30 - 11:00 AM</li>
+                    <li>Fri - 10:00 - 10:30 AM</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+<h1><a href="file:///C:/Users/Lenovo/OneDrive/Documents/Anjel/slide3.html">
+
+</a>
+earning page</h1>
+<script src="slide2.js"></script>
+</body>
+</html>

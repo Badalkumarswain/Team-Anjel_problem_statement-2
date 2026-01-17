@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #1b2a27, #0b0f0e);
+    color: white;
+}
+
+/* Layout */
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80px;
+    background: #0f1c19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #4fd1a5;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+    opacity: 1;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.topbar input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #233331;
+    color: white;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+/* Tabs */
+.tabs {
+    margin: 20px 0;
+}
+
+.tab {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #1f2f2c;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #4fd1a5;
+    color: black;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1a2b28;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card.wide {
+    grid-column: span 2;
+}
+
+.card.balance {
+    background: #4fd1a5;
+    color: black;
+    position: relative;
+}
+
+.card.balance button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Chart */
+.chart {
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    gap: 15px;
+}
+
+.bar {
+    width: 30px;
+    background: repeating-linear-gradient(
+        45deg,
+        #4fd1a5,
+        #4fd1a5 5px,
+        transparent 5px,
+        transparent 10px
+    );
+    border-radius: 10px;
+}
+
+/* Circle */
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#4fd1a5 77%, #2c3f3b 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}

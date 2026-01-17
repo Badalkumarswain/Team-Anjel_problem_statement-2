@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECOLoop Dashboard</title>
+    <link rel="stylesheet" href="slide3.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">ECO<span>Loop</span></h2>
+        <ul>
+            <li class="active">🏠</li>
+            <li>📊</li>
+            <li>💼</li>
+            <li>🔔</li>
+            <li>⚙️</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+            <input type="text" placeholder="Search bar">
+            <div class="user">
+                <span>Hi User!</span>
+                <img src="https://i.pravatar.cc/40" alt="user">
+            </div>
+        </header>
+
+        <h1>My Dashboard</h1>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="filterData('all')">All</button>
+            <button class="tab" onclick="filterData('withdrawal')">Withdrawal</button>
+            <button class="tab" onclick="filterData('savings')">Savings</button>
+            <button class="tab" onclick="filterData('deposit')">Deposit</button>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid">
+
+            <!-- Revenue Flow -->
+            <div class="card wide">
+                <div class="card-header">
+                    <h3>Revenue Flow</h3>
+                    <span>View all →</span>
+                </div>
+                <div class="chart" id="barChart"></div>
+            </div>
+
+            <!-- Total Revenue -->
+            <div class="card balance">
+                <h3>Total Revenue</h3>
+                <p>Total Balance</p>
+                <h1>Rs: <span id="balance">4560</span></h1>
+                <button onclick="addMoney()">＋</button>
+            </div>
+
+            <!-- Waste Management -->
+            <div class="card">
+                <h3>Total Waste Management</h3>
+                <div class="circle">
+                    <span>77%</span>
+                </div>
+            </div>
+
+            <!-- Income -->
+            <div class="card">
+                <h3>Income ↑</h3>
+                <h2>Rs: <span id="income">7560</span></h2>
+                <p>Monitor income to improve savings.</p>
+            </div>
+
+            <!-- Expense -->
+            <div class="card">
+                <h3>Expense ↓</h3>
+                <h2>Rs: <span id="expense">2000</span></h2>
+                <p>Track expenses daily.</p>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+<script src="slide3.js"></script>
+</body>
+</html>
